@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Personal Hugo Portfolio Website build with nomad-tech Theme",
+  "private": true,
+  "scripts": {
+    "start": "hugo server -D  --disableFastRender",
+    "serve": "hugo server -D",
+    "preview": "hugo server --buildDrafts --buildFuture --disableFastRender",
+    "clean": "rimraf node_modules public",
+    "reinstall": "npm run clean && npm install",
+    "prebuild": "rimraf public",
+    "build": "hugo --gc --minify",
+    "example": "hugo server -E -F --minify --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/ -p 1313"
+  },
+  "keywords": [
+    "hugo",
+    "nomad-tech",
+    "portfolio",
+    "personal-website"
+  ],
+  "devDependencies": {
+    "rimraf": "^6.1.2"
+  },
+  "author": "Mustasam Atiq",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustasambila/Portfolio.git"
+  },
+  "homepage": "https://github.com/mustasambila/Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/mustasambila/Portfolio/issues"
+  },
+  "contributors": [
+    "Armoghan-ul-Mohmin <https://armoghan.netlify.app>"
+  ]
+}
