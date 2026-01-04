@@ -1,3 +1,19 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Your Name - Digital Nomad | Tech Insights | Life Stories"
+theme = "nomad-tech"
+
+[params]
+    author = "Your Name"
+    logo = "Site Logo"
+    subtitle = "Digital Nomad • Tech Explorer • Life Recorder"
+    description = "Sharing tech insights, recording nomad life, providing practical guides"
+
+[[params.social]]
+    name = "Twitter"
+    class = "wechat"
+    icon = "🐦"
+    description = ""
+    url = "https://x.com/yourprofile"
+    button_text = "button text"
+
